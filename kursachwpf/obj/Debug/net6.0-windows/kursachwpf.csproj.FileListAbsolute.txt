@@ -1,0 +1,1 @@
+C:\Users\themk\source\repos\kursachwpf\kursachwpf\obj\Debug\net6.0-windows\kursachwpf.csproj.AssemblyReference.cache

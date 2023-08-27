@@ -1,0 +1,28 @@
+﻿<Window x:Class="kursachwpf.sendMail"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:kursachwpf"
+        mc:Ignorable="d"
+        Title="sendMail" Height="450" Width="800" Closed="Window_Closed" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="0.5*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="0.3*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Image Grid.RowSpan="4" Margin="-10" Source="C:\Users\themk\source\repos\kursachwpf\kursachwpf\images\zed.png">
+            <Image.OpacityMask>
+                <SolidColorBrush Color="Black" Opacity="0.9"/>
+            </Image.OpacityMask>
+        </Image>
+        <TextBlock Foreground="White" Text="Свяжись с нами" Padding="0" FontFamily="comic sans ms" FontSize="50" HorizontalAlignment="Center" VerticalAlignment="Center" ></TextBlock>
+        <TextBlock Foreground="White" Text="Введи своё имя" Grid.Row="1" FontFamily="comic sans ms" Margin="50,0,0,0" FontSize="24" VerticalAlignment="Center" HorizontalAlignment="Left"></TextBlock>
+        <TextBox x:Name="tbName" FontFamily="comic sans ms" FontSize="25" Grid.Row="1" Width="200" Height="40" Margin="250,0,0,0" VerticalAlignment="Center" HorizontalAlignment="Left" ></TextBox>
+        <TextBlock Foreground="White" Text="Введи своё сообщение" Grid.Row="2" FontFamily="comic sans ms" FontSize="20" Margin="12,0,0,0" VerticalAlignment="Top" HorizontalAlignment="Left"></TextBlock>
+        <RichTextBox x:Name="rtbSendMail" FontFamily="comic sans ms" FontSize="16" Grid.Row="2" Width="450" Height="140" Margin="151,0,0,0" VerticalAlignment="Center" HorizontalAlignment="Center"></RichTextBox>
+        <Button x:Name="btnSend" Grid.Row="3" Width="200" Height="40" Content="Отправить" FontFamily="comic sans ms" FontSize="26" Margin="30,3,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Click="btnSend_Click"></Button>
+    </Grid>
+</Window>

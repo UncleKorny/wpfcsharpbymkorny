@@ -1,0 +1,23 @@
+﻿<Window x:Class="kursachwpf.about"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:kursachwpf"
+        mc:Ignorable="d"
+        Title="about" Height="228" Width="494" Closed="Window_Closed" WindowStartupLocation="CenterScreen" Icon="/lolico.ico" ResizeMode="NoResize" >
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Image Source="C:\Users\themk\source\repos\kursachwpf\kursachwpf\images\about.png" Height="212"/>
+        <StackPanel Grid.Row="0">
+            <TextBlock Foreground="White" Text="Legends of Runeterra" FontSize="24" FontFamily="comic sans ms" VerticalAlignment="Top" HorizontalAlignment="Center" />
+            <TextBlock Foreground="White" Text="Информационно ознакомительное приложение по вселенной 'Legends of Runeterra'." FontFamily="comic sans ms" FontSize="16" TextWrapping="Wrap"></TextBlock>
+            <TextBlock Foreground="White" Text="Создано при финансовой поддержке колледжа." TextWrapping="Wrap" FontFamily="comic sans ms" FontSize="16"></TextBlock>
+            <TextBlock></TextBlock>
+            <TextBlock Foreground="White" Text="(c) OOO TheUncleKorny Company" FontFamily="comic sans ms" FontSize="14"></TextBlock>
+            <TextBlock Foreground="White" Text="(c) 'Legends of Runeterra' 2022г." FontFamily="comic sans ms" FontSize="14" VerticalAlignment="Bottom"></TextBlock>
+        </StackPanel>
+    </Grid>
+</Window>

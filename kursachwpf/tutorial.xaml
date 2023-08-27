@@ -1,0 +1,48 @@
+﻿<Window x:Class="kursachwpf.tutorial"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:kursachwpf"
+        mc:Ignorable="d"
+        Title="Туториал" Height="450" Width="800" Closed="Window_Closed" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Icon="/lolico.ico">
+    <Grid>
+        <Image Source="C:\Users\themk\source\repos\kursachwpf\kursachwpf\images\tutor.png">
+            <Image.OpacityMask>
+                <SolidColorBrush Color="Black" Opacity="0.9"/>
+            </Image.OpacityMask>
+        </Image>
+        <ScrollViewer>
+            <StackPanel Margin="0,0,0,0">
+                <TextBlock Foreground="White" Text="Туториал" FontFamily="comic sans ms" FontSize="50" HorizontalAlignment="Center" VerticalAlignment="Top"></TextBlock>
+                <TextBlock Foreground="White" Text="Приветствую тебя в нашем приложении! Данное приложение позволяет рядовым пользователям ознакомиться с историей персонажей такой замечательной вселенной как Runeterra, а именно героев из именитой игры League of Legends. И да, если тебе выдали админку, читай последнюю часть туториала!" Margin="5,5,5,5" FontSize="20" FontFamily="comic sans ms" TextWrapping="Wrap"></TextBlock>
+                <TextBlock Foreground="White" Text="Итак, 'Гайд' расскажет тебе о возможностях этого приложения." Margin="5,5,5,5" FontSize="20" FontFamily="comic sans ms" TextWrapping="Wrap"></TextBlock>
+                <Image Source="C:\Users\themk\source\repos\kursachwpf\kursachwpf\tutorialImages\mainScreen.png" Width="700" HorizontalAlignment="Center" VerticalAlignment="Top"></Image>
+                <TextBlock Foreground="White" Text="1) Это строка поиска. Т.к. данный туториал пишется на стадии разработки, то чемпионов на скриншоте маловато, но на минуточку, в игре на данный момент 157 чемпионов. Поэтому данный поиск поможет вам найти нужного!" Margin="5,5,5,5" FontSize="20" FontFamily="comic sans ms" TextWrapping="Wrap"></TextBlock>
+                <TextBlock Foreground="White" Text="2) Это выпадающий список с названиями классов чемпионов. Это присутствует тут для быстрого поиска чемпионов по вашему любимому классу!" Margin="5,5,5,5" FontSize="20" FontFamily="comic sans ms" TextWrapping="Wrap"></TextBlock>
+                <TextBlock Foreground="White" Text="3) Это панелька с выбором чемпиона, чтобы посмотреть историю нужного вам чемпиона вам нужно нажать на имя чемпиона, и история появится справа от этой панельки." Margin="5,5,5,5" FontSize="20" FontFamily="comic sans ms" TextWrapping="Wrap"></TextBlock>
+                <TextBlock Foreground="White" Text="4) Эта кнопочка служит для авторизации в нашем приложении. Технически, это не обязательно, однако понадобится если вы решите отправить сообщение нам на почту!" Margin="5,5,5,5" FontSize="20" FontFamily="comic sans ms" TextWrapping="Wrap"></TextBlock>
+                <TextBlock Foreground="White" Text="5) Это пространство служит как вместилище для истории чемпиона. И на заднем плане можно увидеть его фотографию." Margin="5,5,5,5" FontSize="20" FontFamily="comic sans ms" TextWrapping="Wrap"></TextBlock>
+                <TextBlock Foreground="White" Text="На этом туториал для обычных смертных заканчивается, далее пойдет информация для админов." Margin="5,5,5,5" FontSize="20" FontFamily="comic sans ms" TextWrapping="Wrap"></TextBlock>
+                <TextBlock Foreground="White" Text=""></TextBlock>
+                <TextBlock Foreground="White" Text="Информация для админов" FontFamily="comic sans ms" FontSize="50" HorizontalAlignment="Center" VerticalAlignment="Top"></TextBlock>
+                <TextBlock Foreground="White" Text="" Margin="5,5,5,5" FontSize="20" FontFamily="comic sans ms" TextWrapping="Wrap" HorizontalAlignment="Left">Если уж вам каким-нибудь образом удалось наклянчить админку, внемли моим словам. При входе в свой аккаунт на месте кнопки 'Войти' появятся 3 новых кнопочки, а именно: <LineBreak></LineBreak> '+' - Добавить чемпиона <LineBreak></LineBreak> '-' - Удалить чемпиона <LineBreak></LineBreak> 'edit' - изменить чемпиона. </TextBlock>
+                <Image Source="C:\Users\themk\source\repos\kursachwpf\kursachwpf\tutorialImages\buttonsForAdmin.png" Width="200" Margin="5,0,0,0" HorizontalAlignment="Left"/>
+                <TextBlock Foreground="White" Margin="5,5,5,5" FontSize="20" FontFamily="comic sans ms" TextWrapping="Wrap" HorizontalAlignment="Left">1) Первая кнопочка позволяет добавить чемпиона в базу данных для последующего просмотра, удаления, изменения.</TextBlock>
+                <Image Source="C:\Users\themk\source\repos\kursachwpf\kursachwpf\tutorialImages\addChampions.png" Width="500"></Image>
+                <TextBlock Foreground="White" Margin="5,5,5,5" FontSize="20" FontFamily="comic sans ms" TextWrapping="Wrap" HorizontalAlignment="Left"> Довольно простой интерфейс, не так ли? Однако если ты криворукий, то всегда что-то может пойти не по тому месту, поэтому вводи все данные и только потом нажимай на кнопку добавить! </TextBlock>
+                <TextBlock Foreground="White" Margin="5,5,5,5" FontSize="20" FontFamily="comic sans ms" TextWrapping="Wrap" HorizontalAlignment="Left"> 2) Вторая кнопочка позволяет удалить чемпиона из базы данных.</TextBlock>
+                <Image Source="C:\Users\themk\source\repos\kursachwpf\kursachwpf\tutorialImages\deleteChampions.png" Width="500"></Image>
+                <TextBlock Foreground="White" Margin="5,5,5,5" FontSize="20" FontFamily="comic sans ms" TextWrapping="Wrap" HorizontalAlignment="Left"> А тут интерфейс еще проще, поэтому не наплошай!</TextBlock>
+                <TextBlock Foreground="White"  Margin="5,5,5,5" FontSize="20" FontFamily="comic sans ms" TextWrapping="Wrap" HorizontalAlignment="Left"> 3) Третья кнопочка позволяет изменить данные о чемпионе в базе данных. </TextBlock>
+                <TextBlock Foreground="White" Margin="5,5,5,5" FontSize="24" FontWeight="Bold" FontFamily="comic sans ms" TextWrapping="Wrap" HorizontalAlignment="Left">Внимание! Для изменения чемпионов тебе нужно завершить прочтение этого туторилала и нажать кнопку в самом низу этого окна! <LineBreak></LineBreak> Для того чтобы изменить информацию какого-либо чемпиона, его сначала нужно выбрать в 3 пункте начального туториала!</TextBlock>
+                <Image Source="C:\Users\themk\source\repos\kursachwpf\kursachwpf\tutorialImages\editChampions.png" Width="500"></Image>
+                <TextBlock Foreground="White" Margin="5,5,5,5" FontSize="20" FontFamily="comic sans ms" TextWrapping="Wrap" HorizontalAlignment="Left">Ну а тут немного все посложнее... Небольшая область над именем отделена для изображения, чтобы изменить изображение нужно просто нажать на него! Далее, уже под изображением идет как раз таки имя чемпиона. Как введешь имя, так оно и будет отображаться в приложении! Далее идет выбор класса чемпиона. Правая большая область отведена под историю чемпиона. После всех изменений тыкай кнопочку 'Изменить'.</TextBlock>
+                <TextBlock Foreground="White" Text=""></TextBlock>
+                <TextBlock Foreground="White" Text="На этом туториал заканичивается. Спасибо за то, что прочитал его до самого конца!" Margin="5,5,5,5" FontSize="20" FontFamily="comic sans ms" TextWrapping="Wrap" HorizontalAlignment="Left"></TextBlock>
+                <Button x:Name="endOfTutorial" HorizontalAlignment="Center" VerticalAlignment="Center" Width="200" Height="50" FontFamily="comic sans ms" FontSize="24" Click="endOfTutorial_Click">Та самая кнопка</Button>
+                <TextBlock></TextBlock>
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+</Window>
